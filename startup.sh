@@ -75,7 +75,7 @@ install_gobuster () {
 install_gedit () {
         dpkg -s gedit &> /dev/null
         status=$?
-        if [$status -eq 0]; then
+        if [ $status -eq 0]; then
                 echo -e "\n $redminus gedit already installed"
         else
                 echo -e "\n $greenplus running: Installing gedit \n"
@@ -87,7 +87,7 @@ install_gedit () {
 install_netexec () {
         dpkg -s netexec &> /dev/null
         status=$?
-        if [$status -eq 0]; then
+        if [ $status -eq 0]; then
                 echo -e "\n $redminus netexec already installed"
         else
                 echo -e "\n $greenplus running: Installing netexec \n"
